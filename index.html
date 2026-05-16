@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hidden Gems Drop — eBay Finds Before Anyone Else</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    :root {
+      --cream: #f7f2eb !important;
+      --warm-white: #fdfaf5 !important;
+      --ink: #1a1510 !important;
+      --muted: #7a6f63 !important;
+      --accent: #c8873a !important;
+      --accent-light: #e8b87a !important;
+      --telegram: #229ED9 !important;
+      --border: #e0d8cc !important;
+      --serif: 'Playfair Display', Georgia, serif !important;
+      --sans: 'DM Sans', sans-serif !important;
+    }
+
+    html {
+      scroll-behavior: smooth !important;
+    }
+
+    body {
+      background-color: var(--cream) !important;
+      color: var(--ink) !important;
+      font-family: var(--sans) !important;
+      font-weight: 300 !important;
+      line-height: 1.7 !important;
+      min-height: 100vh !important;
+      overflow-x: hidden !important;
+    }
+
+    /* ── HERO ─────────────────────────────── */
+    .hero {
+      background-color: var(--ink) !important;
+      color: var(--cream) !important;
+      padding: 80px 24px 72px !important;
+      text-align: center !important;
+      position: relative !important;
+      overflow: hidden !important;
+    }
+
+    .hero::before {
+      content: '' !important;
+      position: absolute !important;
+      inset: 0 !important;
+      background: radial-gradient(ellipse at 60% 0%, #3a2a1a 0%, transparent 65%),
+                  radial-gradient(ellipse at 20% 100%, #2a1f10 0%, transparent 60%) !important;
+      pointer-events: none !important;
+    }
+
+    .hero-eyebrow {
+      display: inline-block !important;
+      font-family: var(--sans) !important;
+      font-size: 11px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0.2em !important;
+      text-transform: uppercase !important;
+      color: var(--accent-light) !important;
+      margin-bottom: 24px !important;
+      position: relative !important;
+    }
+
+    .hero-eyebrow::before,
+    .hero-eyebrow::after {
+      content: '——' !important;
+      opacity: 0.5 !important;
+      margin: 0 10px !important;
+    }
+
+    .hero h1 {
+      font-family: var(--serif) !important;
+      font-size: clamp(38px, 7vw, 72px) !important;
+      font-weight: 700 !important;
+      line-height: 1.1 !important;
+      letter-spacing: -0.02em !important;
+      margin-bottom: 8px !important;
+      position: relative !important;
+    }
+
+    .hero h1 em {
+      font-style: italic !important;
+      color: var(--accent-light) !important;
+    }
+
+    .hero-sub {
+      font-family: var(--serif) !important;
+      font-style: italic !important;
+      font-size: clamp(16px, 2.5vw, 22px) !important;
+      color: #b0a090 !important;
+      margin-top: 16px !important;
+      margin-bottom: 40px !important;
+      position: relative !important;
+    }
+
+    .hero-cta {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      background-color: var(--telegram) !important;
+      color: #fff !important;
+      font-family: var(--sans) !important;
+      font-size: 15px !important;
+      font-weight: 500 !important;
+      text-decoration: none !important;
+      padding: 14px 32px !important;
+      border-radius: 4px !important;
+      letter-spacing: 0.02em !important;
+      position: relative !important;
+      transition: background 0.2s ease !important;
+    }
+
+    .hero-cta:hover {
+      background-color: #1a8abf !important;
+    }
+
+    .hero-cta svg {
+      width: 20px !important;
+      height: 20px !important;
+      flex-shrink: 0 !important;
+    }
+
+    /* ── ARTICLE WRAPPER ─────────────────── */
+    .article {
+      max-width: 740px !important;
+      margin: 0 auto !important;
+      padding: 0 24px 80px !important;
+    }
+
+    /* ── INTRO BLOCK ─────────────────────── */
+    .intro {
+      padding: 56px 0 40px !important;
+      border-bottom: 1px solid var(--border) !important;
+    }
+
+    .intro p {
+      font-size: 18px !important;
+      line-height: 1.8 !important;
+      color: #3a3028 !important;
+    }
+
+    .intro p + p {
+      margin-top: 20px !important;
+    }
+
+    .intro strong {
+      font-weight: 500 !important;
+      color: var(--ink) !important;
+    }
+
+    /* ── SECTION ─────────────────────────── */
+    .section {
+      padding: 48px 0 !important;
+      border-bottom: 1px solid var(--border) !important;
+    }
+
+    .section:last-child {
+      border-bottom: none !important;
+    }
+
+    .section-label {
+      font-family: var(--sans) !important;
+      font-size: 10px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0.22em !important;
+      text-transform: uppercase !important;
+      color: var(--accent) !important;
+      margin-bottom: 16px !important;
+    }
+
+    .section h2 {
+      font-family: var(--serif) !important;
+      font-size: clamp(24px, 4vw, 34px) !important;
+      font-weight: 700 !important;
+      line-height: 1.2 !important;
+      letter-spacing: -0.01em !important;
+      margin-bottom: 20px !important;
+    }
+
+    .section h2 em {
+      font-style: italic !important;
+      color: var(--muted) !important;
+    }
+
+    .section p {
+      font-size: 16px !important;
+      line-height: 1.85 !important;
+      color: #3a3028 !important;
+      margin-bottom: 16px !important;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    /* ── PHOTO GRID ──────────────────────── */
+    .photo-grid {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 12px !important;
+      margin: 32px 0 !important;
+    }
+
+    .photo-grid.three {
+      grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .photo-grid.wide {
+      grid-template-columns: 1fr !important;
+    }
+
+    .photo-frame {
+      background-color: #ede6dc !important;
+      border-radius: 4px !important;
+      overflow: hidden !important;
+      aspect-ratio: 4/5 !important;
+      position: relative !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 12px !important;
+    }
+
+    .photo-frame.landscape {
+      aspect-ratio: 16/9 !important;
+    }
+
+    .photo-frame img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: contain !important;
+      display: block !important;
+      border-radius: 2px !important;
+    }
+
+    .photo-caption {
+      font-family: var(--sans) !important;
+      font-size: 12px !important;
+      color: var(--muted) !important;
+      text-align: center !important;
+      margin-top: 10px !important;
+      font-style: italic !important;
+    }
+
+    /* ── PULL QUOTE ──────────────────────── */
+    .pull-quote {
+      border-left: 3px solid var(--accent) !important;
+      padding: 4px 0 4px 28px !important;
+      margin: 36px 0 !important;
+    }
+
+    .pull-quote p {
+      font-family: var(--serif) !important;
+      font-size: clamp(19px, 3vw, 26px) !important;
+      font-style: italic !important;
+      line-height: 1.5 !important;
+      color: var(--ink) !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* ── PILLARS ─────────────────────────── */
+    .pillars {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr 1fr !important;
+      gap: 20px !important;
+      margin: 32px 0 !important;
+    }
+
+    .pillar {
+      background-color: var(--warm-white) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 4px !important;
+      padding: 24px 20px !important;
+    }
+
+    .pillar-number {
+      font-family: var(--serif) !important;
+      font-size: 36px !important;
+      font-weight: 700 !important;
+      color: var(--accent-light) !important;
+      line-height: 1 !important;
+      margin-bottom: 12px !important;
+    }
+
+    .pillar h3 {
+      font-family: var(--sans) !important;
+      font-size: 13px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0.08em !important;
+      text-transform: uppercase !important;
+      margin-bottom: 10px !important;
+      color: var(--ink) !important;
+    }
+
+    .pillar p {
+      font-size: 14px !important;
+      line-height: 1.7 !important;
+      color: var(--muted) !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* ── TELEGRAM CTA BLOCK ──────────────── */
+    .cta-block {
+      background-color: var(--ink) !important;
+      color: var(--cream) !important;
+      border-radius: 6px !important;
+      padding: 48px 40px !important;
+      text-align: center !important;
+      margin-top: 48px !important;
+    }
+
+    .cta-block h2 {
+      font-family: var(--serif) !important;
+      font-size: clamp(22px, 4vw, 32px) !important;
+      font-weight: 700 !important;
+      line-height: 1.25 !important;
+      margin-bottom: 14px !important;
+    }
+
+    .cta-block h2 em {
+      font-style: italic !important;
+      color: var(--accent-light) !important;
+    }
+
+    .cta-block p {
+      font-size: 15px !important;
+      color: #a09080 !important;
+      margin-bottom: 28px !important;
+      line-height: 1.7 !important;
+    }
+
+    .cta-block a {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      background-color: var(--telegram) !important;
+      color: #fff !important;
+      font-family: var(--sans) !important;
+      font-size: 15px !important;
+      font-weight: 500 !important;
+      text-decoration: none !important;
+      padding: 14px 32px !important;
+      border-radius: 4px !important;
+      letter-spacing: 0.02em !important;
+      transition: background 0.2s ease !important;
+    }
+
+    .cta-block a:hover {
+      background-color: #1a8abf !important;
+    }
+
+    .cta-block a svg {
+      width: 20px !important;
+      height: 20px !important;
+    }
+
+    /* ── FOOTER ──────────────────────────── */
+    footer {
+      text-align: center !important;
+      padding: 32px 24px !important;
+      font-size: 12px !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--border) !important;
+      letter-spacing: 0.05em !important;
+    }
+
+    footer a {
+      color: var(--accent) !important;
+      text-decoration: none !important;
+    }
+
+    /* ── RESPONSIVE ──────────────────────── */
+    @media (max-width: 600px) {
+      .pillars {
+        grid-template-columns: 1fr !important;
+      }
+
+      .photo-grid.three {
+        grid-template-columns: 1fr 1fr !important;
+      }
+
+      .cta-block {
+        padding: 36px 24px !important;
+      }
+
+      .hero {
+        padding: 60px 20px 56px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">Telegram · Free · eBay Auctions</div>
+    <h1>Hidden <em>Gems</em> Drop</h1>
+    <p class="hero-sub">The things worth owning that nobody has noticed yet.</p>
+    <a class="hero-cta" href="https://t.me/HiddenGemsDrop" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+      </svg>
+      Join the channel — it's free
+    </a>
+  </div>
+
+  <!-- ARTICLE -->
+  <div class="article">
+
+    <!-- INTRO -->
+    <div class="intro">
+      <p>
+        Every day, thousands of genuinely beautiful, rare, and undervalued things pass through eBay auctions
+        — and almost nobody sees them. A signed lithograph that sells for $18. A sterling silver tea service
+        with one bid. A hand-thrown studio pottery piece from a respected artist, ending in forty minutes,
+        completely overlooked.
+      </p>
+      <p>
+        <strong>Hidden Gems Drop</strong> is a free Telegram channel that finds those listings first and sends
+        them directly to you. No algorithm. No sponsored posts. Just quiet, curated finds — the things worth
+        owning that nobody has noticed yet.
+      </p>
+    </div>
+
+    <!-- WHAT WE POST -->
+    <div class="section">
+      <div class="section-label">What You'll Find</div>
+      <h2>Art, vintage, objects with <em>history</em></h2>
+      <p>
+        The channel focuses on a specific world: original paintings and prints, antique furniture,
+        studio pottery, textile art, sterling silver, and overlooked decorative objects. The kind of
+        things that feel considered and singular — not mass-produced, not trending, just genuinely
+        good.
+      </p>
+      <p>
+        Every post is a live eBay auction at the moment it goes out. You'll see the current bid,
+        shipping cost, condition, and a direct link. Auctions end and don't get reposted — the
+        freshest finds are always at the top of the channel, so the sooner you check, the better.
+      </p>
+
+      <div class="photo-grid">
+        <div class="photo-frame">
+          <img src="photo1.jpg" alt="eBay gem find example" />
+        </div>
+        <div class="photo-frame">
+          <img src="photo2.jpg" alt="eBay gem find example" />
+        </div>
+      </div>
+      <p class="photo-caption">Real finds posted to the channel — live auctions, not curated after the fact.</p>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div class="section">
+      <div class="section-label">How It Works</div>
+      <h2>Three things make a <em>gem</em></h2>
+      <p>
+        Not every overlooked listing is worth your attention. The channel uses a scoring system built
+        around three signals — the same instincts a seasoned eBay hunter would use, running automatically
+        every thirty minutes.
+      </p>
+
+      <div class="pillars" style="grid-template-columns: 1fr 1fr !important;">
+        <div class="pillar">
+          <div class="pillar-number">01</div>
+          <h3>Ending Soon</h3>
+          <p>Auctions with hours left and a low current bid. Urgency and value in the same listing.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-number">02</div>
+          <h3>Low Competition</h3>
+          <p>Listings that haven't attracted attention yet — few watchers, still wide open.</p>
+        </div>
+      </div>
+
+      <p>
+        Every listing also passes a condition gate — only Good, Very Good, Excellent, or New items
+        make it through. Nothing worn beyond what you'd happily put on a shelf or a wall.
+      </p>
+    </div>
+
+    <!-- PULL QUOTE -->
+    <div class="pull-quote">
+      <p>"Feels like a tip from someone with genuinely great taste — not a discount bot."</p>
+    </div>
+
+    <!-- EXAMPLE POSTS -->
+    <div class="section">
+      <div class="section-label">From the Channel</div>
+      <h2>What a post <em>looks like</em></h2>
+      <p>
+        Each post arrives with a photo, the auction title, time remaining, current bid, shipping cost,
+        and a direct affiliate link. Clean, fast, no noise. If it catches your eye, you have everything
+        you need to act.
+      </p>
+
+      <div class="photo-grid three">
+        <div class="photo-frame">
+          <img src="photo3.jpg" alt="Channel post example" />
+        </div>
+        <div class="photo-frame">
+          <img src="photo4.jpg" alt="Channel post example" />
+        </div>
+        <div class="photo-frame">
+          <img src="photo5.jpg" alt="Channel post example" />
+        </div>
+      </div>
+      <p class="photo-caption">Screenshots from @HiddenGemsDrop — posted every 30 minutes.</p>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="section">
+      <div class="section-label">What We Cover</div>
+      <h2>A specific world, <em>well curated</em></h2>
+      <p>
+        The channel doesn't try to cover everything on eBay. It stays in a defined world of
+        categories where genuinely interesting things get overlooked most often:
+      </p>
+      <p>
+        <strong>Original art</strong> — paintings, prints, sculptures, textile art and fibre art.
+        <strong>Antiques</strong> — furniture, Asian ceramics, sterling silver.
+        <strong>Pottery & glass</strong> — studio pieces, art glass, decorative ceramics.
+      </p>
+      <p>
+        This focus keeps the signal-to-noise ratio high. You won't see electronics, fashion, or
+        bulk resale items. Just objects with character.
+      </p>
+
+      <div class="photo-grid">
+        <div class="photo-frame">
+          <img src="photo6.jpg" alt="Antique find" />
+        </div>
+        <div class="photo-frame">
+          <img src="photo7.jpg" alt="Art find" />
+        </div>
+      </div>
+    </div>
+
+    <!-- FREE + HOW TO JOIN -->
+    <div class="section">
+      <div class="section-label">Joining</div>
+      <h2>Free, forever. <em>No catch.</em></h2>
+      <p>
+        The channel is completely free to follow. Every link posted is an eBay Partner Network
+        affiliate link — if you buy something through the channel, eBay pays a small commission
+        (typically around 3%) at absolutely no extra cost to you. The price you see on eBay is
+        exactly what you pay. That commission is what keeps the channel running.
+      </p>
+      <p>
+        There are no paid placements, no sponsored finds, and no brands paying to appear here.
+        Every listing is surfaced the same way — by the score it earns.
+      </p>
+      <p>
+        All you need is Telegram. If you don't have it yet, it takes about two minutes to set up
+        on any device. Then just tap the link below and hit Join.
+      </p>
+      <p>
+        Posts go out every thirty minutes, around the clock. Mute notifications and check in when
+        you feel like it — or leave them on if you like the hunt.
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-block">
+      <h2>Start finding things <em>before everyone else</em></h2>
+      <p>Free to join. Posts every 30 minutes. Leave anytime.</p>
+      <a href="https://t.me/HiddenGemsDrop" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+        </svg>
+        Open @HiddenGemsDrop on Telegram
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Hidden Gems Drop &nbsp;·&nbsp; <a href="https://t.me/HiddenGemsDrop">@HiddenGemsDrop</a> &nbsp;·&nbsp; All links are eBay Partner Network affiliate links. Commission is earned at no cost to you.</p>
+  </footer>
+
+</body>
+</html>
